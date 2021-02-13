@@ -1,0 +1,348 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FDB0746D25CD1AAC009DE0F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB0746C25CD1AAC009DE0F4 /* AppDelegate.swift */; };
+		FDB0746F25CD1AAC009DE0F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB0746E25CD1AAC009DE0F4 /* ViewController.swift */; };
+		FDB0747225CD1AAC009DE0F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB0747025CD1AAC009DE0F4 /* Main.storyboard */; };
+		FDB0747425CD1AAF009DE0F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDB0747325CD1AAF009DE0F4 /* Assets.xcassets */; };
+		FDB0747725CD1AAF009DE0F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB0747525CD1AAF009DE0F4 /* LaunchScreen.storyboard */; };
+		FDED82AF25D863F00090B865 /* defaultVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FDED82AE25D863F00090B865 /* defaultVideo.mp4 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FDB0746925CD1AAC009DE0F4 /* AutoPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDB0746C25CD1AAC009DE0F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FDB0746E25CD1AAC009DE0F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FDB0747125CD1AAC009DE0F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FDB0747325CD1AAF009DE0F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDB0747625CD1AAF009DE0F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FDB0747825CD1AAF009DE0F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDED82AE25D863F00090B865 /* defaultVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = defaultVideo.mp4; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDB0746625CD1AAC009DE0F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FDB0746025CD1AAC009DE0F4 = {
+			isa = PBXGroup;
+			children = (
+				FDB0746B25CD1AAC009DE0F4 /* AutoPlay */,
+				FDB0746A25CD1AAC009DE0F4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FDB0746A25CD1AAC009DE0F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDB0746925CD1AAC009DE0F4 /* AutoPlay.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDB0746B25CD1AAC009DE0F4 /* AutoPlay */ = {
+			isa = PBXGroup;
+			children = (
+				FDB0746C25CD1AAC009DE0F4 /* AppDelegate.swift */,
+				FDB0746E25CD1AAC009DE0F4 /* ViewController.swift */,
+				FDB0747025CD1AAC009DE0F4 /* Main.storyboard */,
+				FDB0747325CD1AAF009DE0F4 /* Assets.xcassets */,
+				FDB0747525CD1AAF009DE0F4 /* LaunchScreen.storyboard */,
+				FDED82AE25D863F00090B865 /* defaultVideo.mp4 */,
+				FDB0747825CD1AAF009DE0F4 /* Info.plist */,
+			);
+			path = AutoPlay;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDB0746825CD1AAC009DE0F4 /* AutoPlay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDB0747B25CD1AAF009DE0F4 /* Build configuration list for PBXNativeTarget "AutoPlay" */;
+			buildPhases = (
+				FDB0746525CD1AAC009DE0F4 /* Sources */,
+				FDB0746625CD1AAC009DE0F4 /* Frameworks */,
+				FDB0746725CD1AAC009DE0F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AutoPlay;
+			productName = AutoPlay;
+			productReference = FDB0746925CD1AAC009DE0F4 /* AutoPlay.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDB0746125CD1AAC009DE0F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					FDB0746825CD1AAC009DE0F4 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = FDB0746425CD1AAC009DE0F4 /* Build configuration list for PBXProject "AutoPlay" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FDB0746025CD1AAC009DE0F4;
+			productRefGroup = FDB0746A25CD1AAC009DE0F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDB0746825CD1AAC009DE0F4 /* AutoPlay */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FDB0746725CD1AAC009DE0F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDB0747725CD1AAF009DE0F4 /* LaunchScreen.storyboard in Resources */,
+				FDB0747425CD1AAF009DE0F4 /* Assets.xcassets in Resources */,
+				FDB0747225CD1AAC009DE0F4 /* Main.storyboard in Resources */,
+				FDED82AF25D863F00090B865 /* defaultVideo.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDB0746525CD1AAC009DE0F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDB0746F25CD1AAC009DE0F4 /* ViewController.swift in Sources */,
+				FDB0746D25CD1AAC009DE0F4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FDB0747025CD1AAC009DE0F4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDB0747125CD1AAC009DE0F4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FDB0747525CD1AAF009DE0F4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDB0747625CD1AAF009DE0F4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FDB0747925CD1AAF009DE0F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 14.3;
+			};
+			name = Debug;
+		};
+		FDB0747A25CD1AAF009DE0F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TVOS_DEPLOYMENT_TARGET = 14.3;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDB0747C25CD1AAF009DE0F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = AutoPlay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Zeglarski.AutoPlay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		FDB0747D25CD1AAF009DE0F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = AutoPlay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Zeglarski.AutoPlay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDB0746425CD1AAC009DE0F4 /* Build configuration list for PBXProject "AutoPlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDB0747925CD1AAF009DE0F4 /* Debug */,
+				FDB0747A25CD1AAF009DE0F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDB0747B25CD1AAF009DE0F4 /* Build configuration list for PBXNativeTarget "AutoPlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDB0747C25CD1AAF009DE0F4 /* Debug */,
+				FDB0747D25CD1AAF009DE0F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FDB0746125CD1AAC009DE0F4 /* Project object */;
+}
