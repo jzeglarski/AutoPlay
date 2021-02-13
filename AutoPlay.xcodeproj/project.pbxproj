@@ -12,7 +12,7 @@
 		FDB0747225CD1AAC009DE0F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB0747025CD1AAC009DE0F4 /* Main.storyboard */; };
 		FDB0747425CD1AAF009DE0F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDB0747325CD1AAF009DE0F4 /* Assets.xcassets */; };
 		FDB0747725CD1AAF009DE0F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB0747525CD1AAF009DE0F4 /* LaunchScreen.storyboard */; };
-		FDED82AF25D863F00090B865 /* defaultVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FDED82AE25D863F00090B865 /* defaultVideo.mp4 */; };
+		FDED82BE25D873200090B865 /* defaultVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FDED82BD25D873200090B865 /* defaultVideo.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		FDB0747325CD1AAF009DE0F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDB0747625CD1AAF009DE0F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDB0747825CD1AAF009DE0F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FDED82AE25D863F00090B865 /* defaultVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = defaultVideo.mp4; sourceTree = "<group>"; };
+		FDED82BD25D873200090B865 /* defaultVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = defaultVideo.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +61,7 @@
 				FDB0747025CD1AAC009DE0F4 /* Main.storyboard */,
 				FDB0747325CD1AAF009DE0F4 /* Assets.xcassets */,
 				FDB0747525CD1AAF009DE0F4 /* LaunchScreen.storyboard */,
-				FDED82AE25D863F00090B865 /* defaultVideo.mp4 */,
+				FDED82BD25D873200090B865 /* defaultVideo.mp4 */,
 				FDB0747825CD1AAF009DE0F4 /* Info.plist */,
 			);
 			path = AutoPlay;
@@ -127,7 +127,7 @@
 				FDB0747725CD1AAF009DE0F4 /* LaunchScreen.storyboard in Resources */,
 				FDB0747425CD1AAF009DE0F4 /* Assets.xcassets in Resources */,
 				FDB0747225CD1AAC009DE0F4 /* Main.storyboard in Resources */,
-				FDED82AF25D863F00090B865 /* defaultVideo.mp4 in Resources */,
+				FDED82BE25D873200090B865 /* defaultVideo.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +293,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Zeglarski.AutoPlay;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sideApplication.AutoPlay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -313,7 +313,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Zeglarski.AutoPlay;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sideApplication.AutoPlay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
