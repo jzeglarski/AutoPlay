@@ -5,52 +5,58 @@
 //  Created by John Zeglarski on 2/13/21.
 //
 
-import SwiftUI
 import AVKit
 import MultipeerConnectivity
+import SwiftUI
 
 let filename = "defaultVideo"
 let filetype = "mp4"
 
 var player: AVPlayer = {
-    guard let path = Bundle.main.path(forResource: filename, ofType:filetype)
+    guard let path = Bundle.main.path(forResource: filename, ofType: filetype)
     else { fatalError("\(filename).\(filetype) not found") }
-    return AVPlayer(url:  URL(fileURLWithPath: path))
+    return AVPlayer(url: URL(fileURLWithPath: path))
 }()
 
 struct ContentView: View {
-    
+
     @ObservedObject var connector = ConnectivityManager()
     @State private var showingImagePicker = false
     @State private var inputVideoURL: URL?
-    
+
     var size: CGSize {
         CGSize(width: UIScreen.main.bounds.width - 40,
-               height: (UIScreen.main.bounds.width - 40) * (9/16))
+               height: (UIScreen.main.bounds.width - 40) * (9 / 16))
     }
-    
+
     var headerSize: CGSize {
-        CGSize(width: UIScreen.main.bounds.width,
-               height: (UIScreen.main.bounds.width) * (1/3))
+        CGSize(width: UIScreen.main.bounds.width * 0.8,
+               height: UIScreen.main.bounds.width * (1 / 3))
     }
-        
+
     var body: some View {
         ZStack(alignment: .top) {
             VStack {
-                Spacer(minLength: headerSize.height + 30).fixedSize()
+                Spacer(minLength: headerSize.height * 1.4).fixedSize()
                 videoPlayer
                 actionStack
                 Form {
                     Section(header: Text("Devices")) {
-                        peerStack
+                        if connector.peers.count > 0 {
+                            deviceStack
+                        }
+                        else {
+                            noDevices
+                        }
                     }
                 }
             }
             .background(Color(UIColor.systemGroupedBackground))
             Image("Header")
                 .resizable()
+                .aspectRatio(contentMode: .fit)
                 .frame(width: headerSize.width, height: headerSize.height)
-                .padding(.top, 30)
+                .padding(.top, headerSize.height * 0.4)
         }
         .edgesIgnoringSafeArea(.top)
         .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
@@ -61,98 +67,90 @@ struct ContentView: View {
             connector.endSession()
         })
     }
-    
+
     var videoPlayer: some View {
         VideoPlayer(player: player)
-            .onAppear() {
+            .onAppear {
                 player.play()
             }
-            .onDisappear() {
+            .onDisappear {
                 player.pause()
             }
-            .aspectRatio((16/9), contentMode: .fill)
+            .aspectRatio(16 / 9, contentMode: .fill)
             .frame(width: size.width, height: size.height)
             .cornerRadius(12)
     }
-    
+
     var noDevices: some View {
         Button(action: { }, label: {
             ZStack(alignment: .leading) {
-                Image(systemName: "appletv")
+                Image(systemName: "iphone.slash")
                     .imageScale(.large)
                 HStack {
                     Spacer()
                     Text("No Devices")
-                        .font(.headline)
-                        .padding(.vertical)
                     Spacer()
                 }
             }
         })
-        .cornerRadius(12)
+            .font(Font.system(size: 18, weight: .medium, design: .default))
+            .foregroundColor(.secondary)
+            .cornerRadius(12)
     }
-    
-    var peerStack: some View {
+
+    var deviceStack: some View {
         ForEach(connector.peers, id: \.displayName) { peer in
             Button(action: { connector.invite(peer: peer) }, label: {
                 ZStack(alignment: .leading) {
-                    Image(systemName: "appletv")
+                    Image(systemName: connector.connectedPeers.contains(peer) ? "appletv.fill" : "appletv")
                         .imageScale(.large)
-                        .padding(.leading)
                     HStack {
                         Spacer()
                         Text(peer.displayName)
-                            .font(.headline)
-                            .padding(.vertical)
                         Spacer()
                     }
                 }
             })
-            .foregroundColor(.white)
-            .frame(maxWidth:size.width)
-            .background(Color.black)
-            .cornerRadius(12)
+                .font(Font.system(size: 18, weight: .medium, design: .default))
+                .cornerRadius(12)
+                .foregroundColor(connector.connectedPeers.contains(peer) ? .green : .primary)
+                .disabled(connector.connectedPeers.contains(peer))
         }
-        .padding(.vertical)
     }
-    
+
     var actionStack: some View {
         HStack(spacing: 8) {
-            
+
             Button(action: {
                 self.showingImagePicker = true
             }, label: {
                 Image(systemName: "photo.fill.on.rectangle.fill")
                 Text("Pick Video")
             })
-            .frame(maxWidth:size.width)
-            .padding(.vertical)
-            .background(Color.accentColor)
-            .cornerRadius(12)
-            
-            Button(action: uploadVideo, label: {
+                .frame(maxWidth: size.width)
+                .padding(.vertical)
+                .background(Color.accentColor)
+                .cornerRadius(12)
+
+            Button(action: {
+                connector.sendVideo(url: inputVideoURL)
+            }, label: {
                 Image(systemName: "square.and.arrow.up")
                 Text("Uplaod")
             })
-            .frame(maxWidth:size.width)
-            .padding(.vertical)
-            .background(Color.accentColor)
-            .cornerRadius(12)
-            .disabled(!connector.isConnected)
-            
+                .frame(maxWidth: size.width)
+                .padding(.vertical)
+                .background(Color.accentColor)
+                .cornerRadius(12)
+                .disabled(connector.connectedPeers.count < 1)
         }
         .font(.headline)
         .foregroundColor(.white)
         .frame(maxWidth: size.width)
     }
-    
-    func uploadVideo() {
-        connector.sendVideo(url: inputVideoURL)
-    }
-    
+
     func loadImage() {
         guard let videoURL = inputVideoURL else { return }
-        debugPrint(videoURL.debugDescription)
         player.replaceCurrentItem(with: AVPlayerItem(url: videoURL))
         player.play()
     }

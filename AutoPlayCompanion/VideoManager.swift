@@ -18,13 +18,12 @@ struct VideoPicker: UIViewControllerRepresentable {
         picker.mediaTypes = ["public.movie"]
         return picker
     }
-    
+
     func makeCoordinator() -> Coordinator {
         Coordinator(self)
     }
 
     func updateUIViewController(_ uiViewController: UIImagePickerController, context: UIViewControllerRepresentableContext<VideoPicker>) {
-
     }
 }
 
@@ -34,7 +33,7 @@ class Coordinator: NSObject, UINavigationControllerDelegate, UIImagePickerContro
     init(_ parent: VideoPicker) {
         self.parent = parent
     }
-    
+
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
         if let movieUrl = info[.mediaURL] as? URL {
             parent.videoURL = movieUrl
