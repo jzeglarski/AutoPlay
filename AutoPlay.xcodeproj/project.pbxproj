@@ -12,7 +12,18 @@
 		FDB0747225CD1AAC009DE0F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB0747025CD1AAC009DE0F4 /* Main.storyboard */; };
 		FDB0747425CD1AAF009DE0F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDB0747325CD1AAF009DE0F4 /* Assets.xcassets */; };
 		FDB0747725CD1AAF009DE0F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB0747525CD1AAF009DE0F4 /* LaunchScreen.storyboard */; };
+		FDB75B6025D8DC280017E91F /* VideoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB75B5F25D8DC280017E91F /* VideoManager.swift */; };
+		FDB75B6425D8E9DA0017E91F /* VideoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB75B6325D8E9DA0017E91F /* VideoManager.swift */; };
 		FDED82BE25D873200090B865 /* defaultVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FDED82BD25D873200090B865 /* defaultVideo.mp4 */; };
+		FDED82C725D875B80090B865 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDED82C625D875B80090B865 /* AppDelegate.swift */; };
+		FDED82C925D875B80090B865 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDED82C825D875B80090B865 /* SceneDelegate.swift */; };
+		FDED82CB25D875B80090B865 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDED82CA25D875B80090B865 /* ContentView.swift */; };
+		FDED82CD25D875BB0090B865 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDED82CC25D875BB0090B865 /* Assets.xcassets */; };
+		FDED82D025D875BB0090B865 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDED82CF25D875BB0090B865 /* Preview Assets.xcassets */; };
+		FDED82D325D875BB0090B865 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDED82D125D875BB0090B865 /* LaunchScreen.storyboard */; };
+		FDED82DA25D87A580090B865 /* defaultVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FDED82BD25D873200090B865 /* defaultVideo.mp4 */; };
+		FDED82DE25D88A240090B865 /* ConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDED82DD25D88A240090B865 /* ConnectivityManager.swift */; };
+		FDED82E425D896660090B865 /* ConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDED82E325D896660090B865 /* ConnectivityManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,11 +34,30 @@
 		FDB0747325CD1AAF009DE0F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDB0747625CD1AAF009DE0F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDB0747825CD1AAF009DE0F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDB75B5F25D8DC280017E91F /* VideoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoManager.swift; sourceTree = "<group>"; };
+		FDB75B6325D8E9DA0017E91F /* VideoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoManager.swift; sourceTree = "<group>"; };
 		FDED82BD25D873200090B865 /* defaultVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = defaultVideo.mp4; sourceTree = "<group>"; };
+		FDED82C425D875B70090B865 /* AutoPlayCompanion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoPlayCompanion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDED82C625D875B80090B865 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FDED82C825D875B80090B865 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FDED82CA25D875B80090B865 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FDED82CC25D875BB0090B865 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDED82CF25D875BB0090B865 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FDED82D225D875BB0090B865 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FDED82D425D875BB0090B865 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDED82DD25D88A240090B865 /* ConnectivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectivityManager.swift; sourceTree = "<group>"; };
+		FDED82E325D896660090B865 /* ConnectivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectivityManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FDB0746625CD1AAC009DE0F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDED82C125D875B70090B865 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				FDB0746B25CD1AAC009DE0F4 /* AutoPlay */,
+				FDED82C525D875B70090B865 /* AutoPlayCompanion */,
 				FDB0746A25CD1AAC009DE0F4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				FDB0746925CD1AAC009DE0F4 /* AutoPlay.app */,
+				FDED82C425D875B70090B865 /* AutoPlayCompanion.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +90,8 @@
 			children = (
 				FDB0746C25CD1AAC009DE0F4 /* AppDelegate.swift */,
 				FDB0746E25CD1AAC009DE0F4 /* ViewController.swift */,
+				FDED82E325D896660090B865 /* ConnectivityManager.swift */,
+				FDB75B6325D8E9DA0017E91F /* VideoManager.swift */,
 				FDB0747025CD1AAC009DE0F4 /* Main.storyboard */,
 				FDB0747325CD1AAF009DE0F4 /* Assets.xcassets */,
 				FDB0747525CD1AAF009DE0F4 /* LaunchScreen.storyboard */,
@@ -65,6 +99,30 @@
 				FDB0747825CD1AAF009DE0F4 /* Info.plist */,
 			);
 			path = AutoPlay;
+			sourceTree = "<group>";
+		};
+		FDED82C525D875B70090B865 /* AutoPlayCompanion */ = {
+			isa = PBXGroup;
+			children = (
+				FDED82C625D875B80090B865 /* AppDelegate.swift */,
+				FDED82C825D875B80090B865 /* SceneDelegate.swift */,
+				FDED82CA25D875B80090B865 /* ContentView.swift */,
+				FDB75B5F25D8DC280017E91F /* VideoManager.swift */,
+				FDED82DD25D88A240090B865 /* ConnectivityManager.swift */,
+				FDED82CC25D875BB0090B865 /* Assets.xcassets */,
+				FDED82D125D875BB0090B865 /* LaunchScreen.storyboard */,
+				FDED82D425D875BB0090B865 /* Info.plist */,
+				FDED82CE25D875BB0090B865 /* Preview Content */,
+			);
+			path = AutoPlayCompanion;
+			sourceTree = "<group>";
+		};
+		FDED82CE25D875BB0090B865 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FDED82CF25D875BB0090B865 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +145,23 @@
 			productReference = FDB0746925CD1AAC009DE0F4 /* AutoPlay.app */;
 			productType = "com.apple.product-type.application";
 		};
+		FDED82C325D875B70090B865 /* AutoPlayCompanion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDED82D525D875BB0090B865 /* Build configuration list for PBXNativeTarget "AutoPlayCompanion" */;
+			buildPhases = (
+				FDED82C025D875B70090B865 /* Sources */,
+				FDED82C125D875B70090B865 /* Frameworks */,
+				FDED82C225D875B70090B865 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AutoPlayCompanion;
+			productName = AutoPlayCompanion;
+			productReference = FDED82C425D875B70090B865 /* AutoPlayCompanion.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -97,6 +172,9 @@
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					FDB0746825CD1AAC009DE0F4 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					FDED82C325D875B70090B865 = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
@@ -115,6 +193,7 @@
 			projectRoot = "";
 			targets = (
 				FDB0746825CD1AAC009DE0F4 /* AutoPlay */,
+				FDED82C325D875B70090B865 /* AutoPlayCompanion */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +210,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FDED82C225D875B70090B865 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDED82D325D875BB0090B865 /* LaunchScreen.storyboard in Resources */,
+				FDED82D025D875BB0090B865 /* Preview Assets.xcassets in Resources */,
+				FDED82CD25D875BB0090B865 /* Assets.xcassets in Resources */,
+				FDED82DA25D87A580090B865 /* defaultVideo.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -138,8 +228,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDED82E425D896660090B865 /* ConnectivityManager.swift in Sources */,
 				FDB0746F25CD1AAC009DE0F4 /* ViewController.swift in Sources */,
 				FDB0746D25CD1AAC009DE0F4 /* AppDelegate.swift in Sources */,
+				FDB75B6425D8E9DA0017E91F /* VideoManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDED82C025D875B70090B865 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDED82C725D875B80090B865 /* AppDelegate.swift in Sources */,
+				FDED82C925D875B80090B865 /* SceneDelegate.swift in Sources */,
+				FDB75B6025D8DC280017E91F /* VideoManager.swift in Sources */,
+				FDED82DE25D88A240090B865 /* ConnectivityManager.swift in Sources */,
+				FDED82CB25D875B80090B865 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +262,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				FDB0747625CD1AAF009DE0F4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FDED82D125D875BB0090B865 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDED82D225D875BB0090B865 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -321,6 +433,52 @@
 			};
 			name = Release;
 		};
+		FDED82D625D875BB0090B865 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"AutoPlayCompanion/Preview Content\"";
+				DEVELOPMENT_TEAM = E53GDWMY8C;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = AutoPlayCompanion/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sideApplication.AutoPlayCompanion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FDED82D725D875BB0090B865 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"AutoPlayCompanion/Preview Content\"";
+				DEVELOPMENT_TEAM = E53GDWMY8C;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = AutoPlayCompanion/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sideApplication.AutoPlayCompanion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -338,6 +496,15 @@
 			buildConfigurations = (
 				FDB0747C25CD1AAF009DE0F4 /* Debug */,
 				FDB0747D25CD1AAF009DE0F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDED82D525D875BB0090B865 /* Build configuration list for PBXNativeTarget "AutoPlayCompanion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDED82D625D875BB0090B865 /* Debug */,
+				FDED82D725D875BB0090B865 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
