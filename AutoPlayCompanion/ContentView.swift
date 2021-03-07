@@ -6,6 +6,7 @@
 //
 
 import AVKit
+import CoreData
 import MultipeerConnectivity
 import SwiftUI
 
@@ -19,10 +20,14 @@ var player: AVPlayer = {
 }()
 
 struct ContentView: View {
+    @Environment(\.managedObjectContext) private var viewContext
+
+    @FetchRequest(entity: Video.entity(), sortDescriptors: []) var videos: FetchedResults<Video>
 
     @ObservedObject var connector = ConnectivityManager()
     @State private var showingImagePicker = false
     @State private var inputVideoURL: URL?
+    @State private var videoWasImported = false
 
     var size: CGSize {
         CGSize(width: UIScreen.main.bounds.width - 40,
@@ -59,7 +64,7 @@ struct ContentView: View {
                 .padding(.top, headerSize.height * 0.4)
         }
         .edgesIgnoringSafeArea(.top)
-        .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
+        .sheet(isPresented: $showingImagePicker, onDismiss: loadVideo) {
             VideoPicker(videoURL: self.$inputVideoURL)
         }
         .onDisappear(perform: {
@@ -133,26 +138,44 @@ struct ContentView: View {
                 .cornerRadius(12)
 
             Button(action: {
-                connector.sendVideo(url: inputVideoURL)
+                saveVideo()
             }, label: {
-                Image(systemName: "square.and.arrow.up")
-                Text("Uplaod")
+                Image(systemName: videoWasImported ?
+                    "icloud.and.arrow.up" :
+                    "checkmark.icloud")
+                Text(videoWasImported ? "Upload" : "Ready")
             })
                 .frame(maxWidth: size.width)
                 .padding(.vertical)
                 .background(Color.accentColor)
                 .cornerRadius(12)
-                .disabled(connector.connectedPeers.count < 1)
+                .disabled(!videoWasImported)
         }
         .font(.headline)
         .foregroundColor(.white)
         .frame(maxWidth: size.width)
     }
 
-    func loadImage() {
-        guard let videoURL = inputVideoURL else { return }
-        player.replaceCurrentItem(with: AVPlayerItem(url: videoURL))
-        player.play()
+    func loadVideo() {
+        guard
+            let videoURL = inputVideoURL
+        else { return }
+        
+        do {
+            let video = videos.first ?? Video(context: viewContext)
+            video.data = try Data(contentsOf: videoURL, options: .mappedIfSafe)
+            videoWasImported = viewContext.hasChanges
+            player.replaceCurrentItem(with: AVPlayerItem(url: videoURL))
+            player.play()
+        }
+        catch {
+            debugPrint(error)
+        }
+    }
+
+    func saveVideo() {
+        try? viewContext.save()
+        videoWasImported = viewContext.hasChanges
     }
 }
 

@@ -19,7 +19,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
         // Create the SwiftUI view that provides the window contents.
-        let contentView = ContentView()
+        
+        //Inside the PersistenceController initialiser the store is loaded, so gives it time before passing the context to the SwiftUI View
+            let persistenceController = PersistenceController.shared
+        let contentView = ContentView().environment(\.managedObjectContext, persistenceController.container.viewContext)
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {

@@ -14,6 +14,13 @@
 		FDB0747725CD1AAF009DE0F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB0747525CD1AAF009DE0F4 /* LaunchScreen.storyboard */; };
 		FDB75B6025D8DC280017E91F /* VideoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB75B5F25D8DC280017E91F /* VideoManager.swift */; };
 		FDB75B6425D8E9DA0017E91F /* VideoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB75B6325D8E9DA0017E91F /* VideoManager.swift */; };
+		FDC07CC125F409F700CF0BBB /* AutoPlay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FDC07CBF25F409F700CF0BBB /* AutoPlay.xcdatamodeld */; };
+		FDC07CCE25F40C5300CF0BBB /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC07CCD25F40C5300CF0BBB /* CloudKit.framework */; };
+		FDC07CCF25F40C9C00CF0BBB /* AutoPlay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FDC07CBF25F409F700CF0BBB /* AutoPlay.xcdatamodeld */; };
+		FDC07CD625F40CC600CF0BBB /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC07CD525F40CC600CF0BBB /* CloudKit.framework */; };
+		FDC07CDB25F414B700CF0BBB /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC07CD925F414B700CF0BBB /* PersistenceController.swift */; };
+		FDC07CE025F4208F00CF0BBB /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC07CD925F414B700CF0BBB /* PersistenceController.swift */; };
+		FDC07CE425F45B5100CF0BBB /* AVPlayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC07CE325F45B5100CF0BBB /* AVPlayerExtension.swift */; };
 		FDED82BE25D873200090B865 /* defaultVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FDED82BD25D873200090B865 /* defaultVideo.mp4 */; };
 		FDED82C725D875B80090B865 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDED82C625D875B80090B865 /* AppDelegate.swift */; };
 		FDED82C925D875B80090B865 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDED82C825D875B80090B865 /* SceneDelegate.swift */; };
@@ -36,6 +43,13 @@
 		FDB0747825CD1AAF009DE0F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDB75B5F25D8DC280017E91F /* VideoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoManager.swift; sourceTree = "<group>"; };
 		FDB75B6325D8E9DA0017E91F /* VideoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoManager.swift; sourceTree = "<group>"; };
+		FDC07CC025F409F700CF0BBB /* AutoPlay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AutoPlay.xcdatamodel; sourceTree = "<group>"; };
+		FDC07CC925F40C3400CF0BBB /* AutoPlay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AutoPlay.entitlements; sourceTree = "<group>"; };
+		FDC07CCD25F40C5300CF0BBB /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		FDC07CD225F40CC300CF0BBB /* AutoPlayCompanion.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AutoPlayCompanion.entitlements; sourceTree = "<group>"; };
+		FDC07CD525F40CC600CF0BBB /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+		FDC07CD925F414B700CF0BBB /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		FDC07CE325F45B5100CF0BBB /* AVPlayerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerExtension.swift; sourceTree = "<group>"; };
 		FDED82BD25D873200090B865 /* defaultVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = defaultVideo.mp4; sourceTree = "<group>"; };
 		FDED82C425D875B70090B865 /* AutoPlayCompanion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoPlayCompanion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDED82C625D875B80090B865 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDC07CCE25F40C5300CF0BBB /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDC07CD625F40CC600CF0BBB /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +89,7 @@
 				FDB0746B25CD1AAC009DE0F4 /* AutoPlay */,
 				FDED82C525D875B70090B865 /* AutoPlayCompanion */,
 				FDB0746A25CD1AAC009DE0F4 /* Products */,
+				FDC07CCC25F40C5300CF0BBB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,24 +105,38 @@
 		FDB0746B25CD1AAC009DE0F4 /* AutoPlay */ = {
 			isa = PBXGroup;
 			children = (
+				FDC07CC925F40C3400CF0BBB /* AutoPlay.entitlements */,
 				FDB0746C25CD1AAC009DE0F4 /* AppDelegate.swift */,
 				FDB0746E25CD1AAC009DE0F4 /* ViewController.swift */,
 				FDED82E325D896660090B865 /* ConnectivityManager.swift */,
 				FDB75B6325D8E9DA0017E91F /* VideoManager.swift */,
+				FDC07CE325F45B5100CF0BBB /* AVPlayerExtension.swift */,
 				FDB0747025CD1AAC009DE0F4 /* Main.storyboard */,
 				FDB0747325CD1AAF009DE0F4 /* Assets.xcassets */,
 				FDB0747525CD1AAF009DE0F4 /* LaunchScreen.storyboard */,
 				FDED82BD25D873200090B865 /* defaultVideo.mp4 */,
+				FDC07CBF25F409F700CF0BBB /* AutoPlay.xcdatamodeld */,
 				FDB0747825CD1AAF009DE0F4 /* Info.plist */,
 			);
 			path = AutoPlay;
 			sourceTree = "<group>";
 		};
+		FDC07CCC25F40C5300CF0BBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FDC07CD525F40CC600CF0BBB /* CloudKit.framework */,
+				FDC07CCD25F40C5300CF0BBB /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FDED82C525D875B70090B865 /* AutoPlayCompanion */ = {
 			isa = PBXGroup;
 			children = (
+				FDC07CD225F40CC300CF0BBB /* AutoPlayCompanion.entitlements */,
 				FDED82C625D875B80090B865 /* AppDelegate.swift */,
 				FDED82C825D875B80090B865 /* SceneDelegate.swift */,
+				FDC07CD925F414B700CF0BBB /* PersistenceController.swift */,
 				FDED82CA25D875B80090B865 /* ContentView.swift */,
 				FDB75B5F25D8DC280017E91F /* VideoManager.swift */,
 				FDED82DD25D88A240090B865 /* ConnectivityManager.swift */,
@@ -229,7 +260,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDED82E425D896660090B865 /* ConnectivityManager.swift in Sources */,
+				FDC07CC125F409F700CF0BBB /* AutoPlay.xcdatamodeld in Sources */,
 				FDB0746F25CD1AAC009DE0F4 /* ViewController.swift in Sources */,
+				FDC07CE025F4208F00CF0BBB /* PersistenceController.swift in Sources */,
+				FDC07CE425F45B5100CF0BBB /* AVPlayerExtension.swift in Sources */,
 				FDB0746D25CD1AAC009DE0F4 /* AppDelegate.swift in Sources */,
 				FDB75B6425D8E9DA0017E91F /* VideoManager.swift in Sources */,
 			);
@@ -240,7 +274,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDED82C725D875B80090B865 /* AppDelegate.swift in Sources */,
+				FDC07CDB25F414B700CF0BBB /* PersistenceController.swift in Sources */,
 				FDED82C925D875B80090B865 /* SceneDelegate.swift in Sources */,
+				FDC07CCF25F40C9C00CF0BBB /* AutoPlay.xcdatamodeld in Sources */,
 				FDB75B6025D8DC280017E91F /* VideoManager.swift in Sources */,
 				FDED82DE25D88A240090B865 /* ConnectivityManager.swift in Sources */,
 				FDED82CB25D875B80090B865 /* ContentView.swift in Sources */,
@@ -398,6 +434,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AutoPlay/AutoPlay.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E53GDWMY8C;
@@ -419,6 +456,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AutoPlay/AutoPlay.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E53GDWMY8C;
@@ -440,6 +478,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AutoPlayCompanion/AutoPlayCompanion.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"AutoPlayCompanion/Preview Content\"";
 				DEVELOPMENT_TEAM = E53GDWMY8C;
@@ -463,6 +502,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AutoPlayCompanion/AutoPlayCompanion.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"AutoPlayCompanion/Preview Content\"";
 				DEVELOPMENT_TEAM = E53GDWMY8C;
@@ -512,6 +552,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FDC07CBF25F409F700CF0BBB /* AutoPlay.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FDC07CC025F409F700CF0BBB /* AutoPlay.xcdatamodel */,
+			);
+			currentVersion = FDC07CC025F409F700CF0BBB /* AutoPlay.xcdatamodel */;
+			path = AutoPlay.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FDB0746125CD1AAC009DE0F4 /* Project object */;
 }

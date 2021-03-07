@@ -9,10 +9,6 @@ import AVFoundation
 import MultipeerConnectivity
 import UIKit
 
-
-let filename = "defaultVideo"
-let filetype = "mp4"
-
 var connector = ConnectivityManager()
 
 var alert: UIAlertController = {
