@@ -24,7 +24,6 @@ struct ContentView: View {
 
     @FetchRequest(entity: Video.entity(), sortDescriptors: []) var videos: FetchedResults<Video>
 
-    @ObservedObject var connector = ConnectivityManager()
     @State private var showingImagePicker = false
     @State private var inputVideoURL: URL?
     @State private var videoWasImported = false
@@ -45,32 +44,18 @@ struct ContentView: View {
                 Spacer(minLength: headerSize.height * 1.4).fixedSize()
                 videoPlayer
                 actionStack
-                Form {
-                    Section(header: Text("Devices")) {
-                        if connector.peers.count > 0 {
-                            deviceStack
-                        }
-                        else {
-                            noDevices
-                        }
-                    }
-                }
+                Spacer()
             }
-            .background(Color(UIColor.systemGroupedBackground))
             Image("Header")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: headerSize.width, height: headerSize.height)
                 .padding(.top, headerSize.height * 0.4)
         }
-        .edgesIgnoringSafeArea(.top)
+        .edgesIgnoringSafeArea(.all)
         .sheet(isPresented: $showingImagePicker, onDismiss: loadVideo) {
             VideoPicker(videoURL: self.$inputVideoURL)
         }
-        .onDisappear(perform: {
-            connector.stopBrowsing()
-            connector.endSession()
-        })
     }
 
     var videoPlayer: some View {
@@ -84,43 +69,6 @@ struct ContentView: View {
             .aspectRatio(16 / 9, contentMode: .fill)
             .frame(width: size.width, height: size.height)
             .cornerRadius(12)
-    }
-
-    var noDevices: some View {
-        Button(action: { }, label: {
-            ZStack(alignment: .leading) {
-                Image(systemName: "iphone.slash")
-                    .imageScale(.large)
-                HStack {
-                    Spacer()
-                    Text("No Devices")
-                    Spacer()
-                }
-            }
-        })
-            .font(Font.system(size: 18, weight: .medium, design: .default))
-            .foregroundColor(.secondary)
-            .cornerRadius(12)
-    }
-
-    var deviceStack: some View {
-        ForEach(connector.peers, id: \.displayName) { peer in
-            Button(action: { connector.invite(peer: peer) }, label: {
-                ZStack(alignment: .leading) {
-                    Image(systemName: connector.connectedPeers.contains(peer) ? "appletv.fill" : "appletv")
-                        .imageScale(.large)
-                    HStack {
-                        Spacer()
-                        Text(peer.displayName)
-                        Spacer()
-                    }
-                }
-            })
-                .font(Font.system(size: 18, weight: .medium, design: .default))
-                .cornerRadius(12)
-                .foregroundColor(connector.connectedPeers.contains(peer) ? .green : .primary)
-                .disabled(connector.connectedPeers.contains(peer))
-        }
     }
 
     var actionStack: some View {

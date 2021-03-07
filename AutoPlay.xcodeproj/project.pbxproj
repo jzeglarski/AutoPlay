@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C8B9A09AA6D6BE8A26FB820 /* Pods_AutoPlayCompanion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14BD0127F9312F215540EC8B /* Pods_AutoPlayCompanion.framework */; };
+		53CC20D4F621C6E8DE4B290E /* Pods_AutoPlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A25432E972C721426FA1670 /* Pods_AutoPlay.framework */; };
 		FDB0746D25CD1AAC009DE0F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB0746C25CD1AAC009DE0F4 /* AppDelegate.swift */; };
 		FDB0746F25CD1AAC009DE0F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB0746E25CD1AAC009DE0F4 /* ViewController.swift */; };
 		FDB0747225CD1AAC009DE0F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB0747025CD1AAC009DE0F4 /* Main.storyboard */; };
@@ -20,7 +22,7 @@
 		FDC07CD625F40CC600CF0BBB /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC07CD525F40CC600CF0BBB /* CloudKit.framework */; };
 		FDC07CDB25F414B700CF0BBB /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC07CD925F414B700CF0BBB /* PersistenceController.swift */; };
 		FDC07CE025F4208F00CF0BBB /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC07CD925F414B700CF0BBB /* PersistenceController.swift */; };
-		FDC07CE425F45B5100CF0BBB /* AVPlayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC07CE325F45B5100CF0BBB /* AVPlayerExtension.swift */; };
+		FDC07CED25F46E4D00CF0BBB /* CachingPlayerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC07CEC25F46E4D00CF0BBB /* CachingPlayerItem.swift */; };
 		FDED82BE25D873200090B865 /* defaultVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FDED82BD25D873200090B865 /* defaultVideo.mp4 */; };
 		FDED82C725D875B80090B865 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDED82C625D875B80090B865 /* AppDelegate.swift */; };
 		FDED82C925D875B80090B865 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDED82C825D875B80090B865 /* SceneDelegate.swift */; };
@@ -29,11 +31,15 @@
 		FDED82D025D875BB0090B865 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDED82CF25D875BB0090B865 /* Preview Assets.xcassets */; };
 		FDED82D325D875BB0090B865 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDED82D125D875BB0090B865 /* LaunchScreen.storyboard */; };
 		FDED82DA25D87A580090B865 /* defaultVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FDED82BD25D873200090B865 /* defaultVideo.mp4 */; };
-		FDED82DE25D88A240090B865 /* ConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDED82DD25D88A240090B865 /* ConnectivityManager.swift */; };
-		FDED82E425D896660090B865 /* ConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDED82E325D896660090B865 /* ConnectivityManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14BD0127F9312F215540EC8B /* Pods_AutoPlayCompanion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoPlayCompanion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1773B9826B93D6A24764D0AF /* Pods-AutoPlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoPlay.debug.xcconfig"; path = "Target Support Files/Pods-AutoPlay/Pods-AutoPlay.debug.xcconfig"; sourceTree = "<group>"; };
+		5874ACF0AAF9EBC3811CD538 /* Pods-AutoPlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoPlay.release.xcconfig"; path = "Target Support Files/Pods-AutoPlay/Pods-AutoPlay.release.xcconfig"; sourceTree = "<group>"; };
+		8A25432E972C721426FA1670 /* Pods_AutoPlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoPlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D60D3E12CC2898E884DF7B87 /* Pods-AutoPlayCompanion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoPlayCompanion.release.xcconfig"; path = "Target Support Files/Pods-AutoPlayCompanion/Pods-AutoPlayCompanion.release.xcconfig"; sourceTree = "<group>"; };
+		F7AA93CCD365AAEF8782961F /* Pods-AutoPlayCompanion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoPlayCompanion.debug.xcconfig"; path = "Target Support Files/Pods-AutoPlayCompanion/Pods-AutoPlayCompanion.debug.xcconfig"; sourceTree = "<group>"; };
 		FDB0746925CD1AAC009DE0F4 /* AutoPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDB0746C25CD1AAC009DE0F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDB0746E25CD1AAC009DE0F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,7 +55,7 @@
 		FDC07CD225F40CC300CF0BBB /* AutoPlayCompanion.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AutoPlayCompanion.entitlements; sourceTree = "<group>"; };
 		FDC07CD525F40CC600CF0BBB /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
 		FDC07CD925F414B700CF0BBB /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
-		FDC07CE325F45B5100CF0BBB /* AVPlayerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerExtension.swift; sourceTree = "<group>"; };
+		FDC07CEC25F46E4D00CF0BBB /* CachingPlayerItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachingPlayerItem.swift; sourceTree = "<group>"; };
 		FDED82BD25D873200090B865 /* defaultVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = defaultVideo.mp4; sourceTree = "<group>"; };
 		FDED82C425D875B70090B865 /* AutoPlayCompanion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoPlayCompanion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDED82C625D875B80090B865 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,8 +65,6 @@
 		FDED82CF25D875BB0090B865 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FDED82D225D875BB0090B865 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDED82D425D875BB0090B865 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FDED82DD25D88A240090B865 /* ConnectivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectivityManager.swift; sourceTree = "<group>"; };
-		FDED82E325D896660090B865 /* ConnectivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectivityManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDC07CCE25F40C5300CF0BBB /* CloudKit.framework in Frameworks */,
+				53CC20D4F621C6E8DE4B290E /* Pods_AutoPlay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,12 +82,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDC07CD625F40CC600CF0BBB /* CloudKit.framework in Frameworks */,
+				2C8B9A09AA6D6BE8A26FB820 /* Pods_AutoPlayCompanion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B7E1682CFCBEB7E0353DA55 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1773B9826B93D6A24764D0AF /* Pods-AutoPlay.debug.xcconfig */,
+				5874ACF0AAF9EBC3811CD538 /* Pods-AutoPlay.release.xcconfig */,
+				F7AA93CCD365AAEF8782961F /* Pods-AutoPlayCompanion.debug.xcconfig */,
+				D60D3E12CC2898E884DF7B87 /* Pods-AutoPlayCompanion.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FDB0746025CD1AAC009DE0F4 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +107,7 @@
 				FDED82C525D875B70090B865 /* AutoPlayCompanion */,
 				FDB0746A25CD1AAC009DE0F4 /* Products */,
 				FDC07CCC25F40C5300CF0BBB /* Frameworks */,
+				6B7E1682CFCBEB7E0353DA55 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,9 +126,8 @@
 				FDC07CC925F40C3400CF0BBB /* AutoPlay.entitlements */,
 				FDB0746C25CD1AAC009DE0F4 /* AppDelegate.swift */,
 				FDB0746E25CD1AAC009DE0F4 /* ViewController.swift */,
-				FDED82E325D896660090B865 /* ConnectivityManager.swift */,
 				FDB75B6325D8E9DA0017E91F /* VideoManager.swift */,
-				FDC07CE325F45B5100CF0BBB /* AVPlayerExtension.swift */,
+				FDC07CEC25F46E4D00CF0BBB /* CachingPlayerItem.swift */,
 				FDB0747025CD1AAC009DE0F4 /* Main.storyboard */,
 				FDB0747325CD1AAF009DE0F4 /* Assets.xcassets */,
 				FDB0747525CD1AAF009DE0F4 /* LaunchScreen.storyboard */,
@@ -126,6 +143,8 @@
 			children = (
 				FDC07CD525F40CC600CF0BBB /* CloudKit.framework */,
 				FDC07CCD25F40C5300CF0BBB /* CloudKit.framework */,
+				8A25432E972C721426FA1670 /* Pods_AutoPlay.framework */,
+				14BD0127F9312F215540EC8B /* Pods_AutoPlayCompanion.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -139,7 +158,6 @@
 				FDC07CD925F414B700CF0BBB /* PersistenceController.swift */,
 				FDED82CA25D875B80090B865 /* ContentView.swift */,
 				FDB75B5F25D8DC280017E91F /* VideoManager.swift */,
-				FDED82DD25D88A240090B865 /* ConnectivityManager.swift */,
 				FDED82CC25D875BB0090B865 /* Assets.xcassets */,
 				FDED82D125D875BB0090B865 /* LaunchScreen.storyboard */,
 				FDED82D425D875BB0090B865 /* Info.plist */,
@@ -163,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDB0747B25CD1AAF009DE0F4 /* Build configuration list for PBXNativeTarget "AutoPlay" */;
 			buildPhases = (
+				4F9AAE4E19A7513B0B8023D6 /* [CP] Check Pods Manifest.lock */,
 				FDB0746525CD1AAC009DE0F4 /* Sources */,
 				FDB0746625CD1AAC009DE0F4 /* Frameworks */,
 				FDB0746725CD1AAC009DE0F4 /* Resources */,
+				D4C9D1759BC984005342B82E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -180,6 +200,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDED82D525D875BB0090B865 /* Build configuration list for PBXNativeTarget "AutoPlayCompanion" */;
 			buildPhases = (
+				02F2B67406B88358F34739C9 /* [CP] Check Pods Manifest.lock */,
 				FDED82C025D875B70090B865 /* Sources */,
 				FDED82C125D875B70090B865 /* Frameworks */,
 				FDED82C225D875B70090B865 /* Resources */,
@@ -254,16 +275,79 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02F2B67406B88358F34739C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AutoPlayCompanion-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F9AAE4E19A7513B0B8023D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AutoPlay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4C9D1759BC984005342B82E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AutoPlay/Pods-AutoPlay-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AutoPlay/Pods-AutoPlay-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AutoPlay/Pods-AutoPlay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FDB0746525CD1AAC009DE0F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDED82E425D896660090B865 /* ConnectivityManager.swift in Sources */,
 				FDC07CC125F409F700CF0BBB /* AutoPlay.xcdatamodeld in Sources */,
 				FDB0746F25CD1AAC009DE0F4 /* ViewController.swift in Sources */,
+				FDC07CED25F46E4D00CF0BBB /* CachingPlayerItem.swift in Sources */,
 				FDC07CE025F4208F00CF0BBB /* PersistenceController.swift in Sources */,
-				FDC07CE425F45B5100CF0BBB /* AVPlayerExtension.swift in Sources */,
 				FDB0746D25CD1AAC009DE0F4 /* AppDelegate.swift in Sources */,
 				FDB75B6425D8E9DA0017E91F /* VideoManager.swift in Sources */,
 			);
@@ -278,7 +362,6 @@
 				FDED82C925D875B80090B865 /* SceneDelegate.swift in Sources */,
 				FDC07CCF25F40C9C00CF0BBB /* AutoPlay.xcdatamodeld in Sources */,
 				FDB75B6025D8DC280017E91F /* VideoManager.swift in Sources */,
-				FDED82DE25D88A240090B865 /* ConnectivityManager.swift in Sources */,
 				FDED82CB25D875B80090B865 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,6 +514,7 @@
 		};
 		FDB0747C25CD1AAF009DE0F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1773B9826B93D6A24764D0AF /* Pods-AutoPlay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -453,6 +537,7 @@
 		};
 		FDB0747D25CD1AAF009DE0F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5874ACF0AAF9EBC3811CD538 /* Pods-AutoPlay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -475,6 +560,7 @@
 		};
 		FDED82D625D875BB0090B865 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7AA93CCD365AAEF8782961F /* Pods-AutoPlayCompanion.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -499,6 +585,7 @@
 		};
 		FDED82D725D875BB0090B865 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D60D3E12CC2898E884DF7B87 /* Pods-AutoPlayCompanion.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

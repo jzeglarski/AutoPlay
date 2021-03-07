@@ -9,8 +9,7 @@ import AVFoundation
 import MultipeerConnectivity
 import UIKit
 
-var connector = ConnectivityManager()
-
+/*
 var alert: UIAlertController = {
     let alert = UIAlertController(title: "Waiting for iPhone", message: "Open the AutoPlay app on iPhone to connect and upload videos.", preferredStyle: .alert)
     alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
@@ -19,7 +18,7 @@ var alert: UIAlertController = {
     }))
     return alert
 }()
-
+*/
 
 class ViewController: UIViewController {
 
@@ -27,9 +26,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         playVideo()
         NotificationCenter.default.addObserver(self, selector: #selector(playerDidFinishPlaying), name: .AVPlayerItemDidPlayToEndTime, object: nil)
-        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(connectCompanion))
-        tapRecognizer.allowedPressTypes = [NSNumber(value: UIPress.PressType.playPause.rawValue)]
-        view.addGestureRecognizer(tapRecognizer)
+//        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(connectCompanion))
+//        tapRecognizer.allowedPressTypes = [NSNumber(value: UIPress.PressType.playPause.rawValue)]
+//        view.addGestureRecognizer(tapRecognizer)
     }
 
     func playVideo() {
@@ -40,15 +39,17 @@ class ViewController: UIViewController {
         player.play()
     }
 
+    /*
     @objc func connectCompanion() {
         player.pause()
         connector.startAdvertising()
         present(alert, animated: true, completion: nil)
     }
+    */
 
     @objc func playerDidFinishPlaying() {
-        connector.stopAdvertising()
-        connector.endSession()
+//        connector.stopAdvertising()
+//        connector.endSession()
         exit(0)
     }
 }
